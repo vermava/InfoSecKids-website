@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='style.css' type='text/css' rel='stylesheet'>
+    <title>InfosecKids</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><img src="images\image 5.svg" class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html" id="special">Events</a></li>
+                <li><a href="chapterleaders.html">Chapter Leaders</a></li>
+                <li><a href="#">Mentoring</a></li>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="search">
+                <div class="textcont"><input type="text" placeholder="Search" class="searchbox"><i class="fa fa-search searchicon"></i></div>
+                <div class="searchbuttoncont"><button class="searchbutton">Event Calendar</button></div>
+            </div>
+            <div class="eventlistcont">
+                <div class="eventlist"></div>
+                <div class="filters">
+                    <strong>Categories</strong><br>
+                    <div class="catlist">
+                        <input type="checkbox" checked> Community<br>
+                        <input type="checkbox" checked> Event<br>
+                        <input type="checkbox" checked> Webinar
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="app1.js"></script>
+</body>
+</html>
