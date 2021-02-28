@@ -32,6 +32,12 @@ nav {
   z-index: -1;
 }
 
+.main1 {
+  z-index: -1;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -184,7 +190,7 @@ nav {
 
 .text1 {
   padding: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Poppins', sans-serif;
   width: 35vw;
 }
@@ -265,7 +271,7 @@ nav {
 .text2 {
   width: 40%;
   padding: 20px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -322,6 +328,8 @@ nav {
   border-radius: 50%;
   position: absolute;
   width: 10vw;
+  height: 10vw;
+  overflow: hidden;
   border-style: solid;
   border-color: #f41971;
   border-width: 5px;
@@ -334,6 +342,8 @@ nav {
   border-radius: 50%;
   position: absolute;
   width: 10vw;
+  height: 10vw;
+  overflow: hidden;
   border-style: solid;
   border-color: #00c3f7;
   border-width: 5px;
@@ -424,11 +434,13 @@ nav {
 
 .leadimg {
   width: 150px;
+  height: 150px;
   margin-right: auto;
   margin-left: auto;
   border-radius: 50%;
   border-style: solid;
   border-color: #f41971;
+  overflow: hidden;
 }
 
 .imgdesc {
@@ -477,18 +489,18 @@ nav {
 }
 
 .textcont {
-  width: 50%;
+  width: 40%;
 }
 
 .searchbuttoncont {
-  width: 20%;
+  width: 42.5%;
 }
 
 .searchbox {
   background-color: #fff;
   width: 90%;
   height: 7vh;
-  color: #000;
+  color: #00c3f7;
   border: 3px solid #000;
   border-radius: 20px;
   outline: none;
@@ -505,7 +517,7 @@ nav {
   border-radius: 12.5px;
   outline: none;
   border: none;
-  width: 90%;
+  width: 35%;
   height: 7vh;
   font-size: 25px;
   margin: 20px;
@@ -571,6 +583,7 @@ nav {
 
 .tagdatecont {
   display: flex;
+  margin-top: 10px;
 }
 
 .eventdate {
@@ -591,9 +604,101 @@ nav {
   height: 1em;
 }
 
+.eventabout {
+  margin-top: 10px;
+}
+
 .catlist input {
   height: 15px;
   width: 15px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #00c3f7;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbarlink {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.first3 li {
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.first3 li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.last3 li {
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.last3 li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social {
+  font-family: 'Poppins', sans-serif;
+  width: 20%;
+  font-size: 20px;
+}
+
+.social img {
+  width: 1.25em;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.signup {
+  font-family: 'Poppins', sans-serif;
+  width: 30%;
+  font-size: 20px;
+}
+
+.inputemail {
+  height: 30px;
+  width: 60%;
+  outline: none;
+  border: none;
+  border-radius: 7.5px 0 0 7.5px;
+  padding-left: 10px;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+.inputemail::placeholder {
+  color: #787373;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.signupsubmit {
+  width: 25%;
+  background-color: #f41971;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0 7.5px 7.5px 0;
+  margin-left: -5px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -617,6 +722,11 @@ nav {
 
   .main {
     margin-top: 14vh;
+  }
+
+  .main1 {
+    margin-top: 14vh;
+    padding: 0;
   }
 
   .nav-links {
@@ -693,6 +803,7 @@ nav {
 
   .text2 {
     width: 100vw;
+    font-size: 15px;
   }
 
   .image2 {
@@ -713,6 +824,7 @@ nav {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    font-size:15px;
   }
 
   .continuereading {
@@ -723,24 +835,28 @@ nav {
     width: 90vw;
     padding: 20px;
     padding-top: 15vw;
+    font-size:15px;
   }
 
   .about2 {
     width: 90vw;
     padding: 20px;
     padding-top: 15vw;
+    font-size:15px;
   }
 
   .aboutimg1 {
-    width: 30vw;
-    margin-left: 30vw;
-    margin-right: 30vw;
+    width: 35vw;
+    height: 35vw;
+    margin-left: 27.5vw;
+    margin-right: 27.5vw;
   }
 
   .aboutimg2 {
-    width: 30vw;
-    margin-left: 30vw;
-    margin-right: 30vw;
+    width: 35vw;
+    height: 35vw;
+    margin-left: 27.5vw;
+    margin-right: 27.5vw;
   }
 
   .aboutus strong {
@@ -792,5 +908,60 @@ nav {
 
   .center {
     margin-top: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .navbarlink,
+  .signup,
+  .social {
+    width: 100%;
+  }
+
+  .navbarlink {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .social img {
+    margin-top: 10px;
+    width: 1.6em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .signup {
+    margin-top: 20px;
+  }
+
+  .inputemail {
+    margin-top: 10px;
+  }
+
+  .signupsubmit {
+    margin-top: 10px;
+  }
+
+  .socialimgcont {
+    display: flex;
+    justify-content: center;
+  }
+
+  .first3 {
+    width: 55%;
+  }
+
+  .last3 {
+    width: 45%;
+  }
+
+  .email {
+    display: flex;
+    justify-content: center;
+    width:95%;
   }
 }
