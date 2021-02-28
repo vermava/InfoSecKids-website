@@ -173,7 +173,6 @@ nav {
   height: 86vh;
   justify-content: center;
   align-items: center;
-  margin-top: 14vh;
 }
 
 .center1 {
@@ -722,13 +721,13 @@ nav {
   .about1 {
     width: 90vw;
     padding: 20px;
-    padding-top: 40px;
+    padding-top: 15vw;
   }
 
   .about2 {
     width: 90vw;
     padding: 20px;
-    padding-top: 40px;
+    padding-top: 15vw;
   }
 
   .aboutimg1 {
