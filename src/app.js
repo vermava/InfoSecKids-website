@@ -24,3 +24,24 @@ Array.prototype.forEach.call(dotElems, (dotElem) => {
     sliderElem.setAttribute('data-pos', newPos)
   })
 })
+const swiping = () => {
+  sliderElem.addEventListener('swiped-left', function (e) {
+    const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
+    const newPos = currentPos + 1
+    if (newPos < 4) {
+      indicatorElem.className = 'slider__indicator'
+      indicatorElem.classList.add('slider__indicator--left')
+      sliderElem.setAttribute('data-pos', newPos)
+    }
+  })
+  sliderElem.addEventListener('swiped-right', function (e) {
+    const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
+    const newPos = currentPos - 1
+    if (newPos > -1) {
+      indicatorElem.className = 'slider__indicator'
+      indicatorElem.classList.add('slider__indicator--right')
+      sliderElem.setAttribute('data-pos', newPos)
+    }
+  })
+}
+swiping()
