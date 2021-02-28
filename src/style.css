@@ -438,9 +438,22 @@ nav {
   margin-right: auto;
   margin-left: auto;
   border-radius: 50%;
-  border-style: solid;
+  border-width: 5px;
   border-color: #f41971;
+  border-style: solid;
   overflow: hidden;
+}
+
+.leadmain .leadmain1:nth-child(3n+0) .leadimg {
+  border-color: #f41971;
+}
+
+.leadmain .leadmain1:nth-child(3n+1) .leadimg {
+  border-color: #98d800;
+}
+
+.leadmain .leadmain1:nth-child(3n+2) .leadimg {
+  border-color: #00c3f7;
 }
 
 .imgdesc {
@@ -860,6 +873,10 @@ nav {
   }
 
   .aboutus strong {
+    margin-left: 10vw;
+  }
+
+  .fromourblogtitle strong {
     margin-left: 10vw;
   }
 
