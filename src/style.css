@@ -125,7 +125,7 @@ nav {
 .slider__dots {
   display: flex;
   position: absolute;
-  bottom: 1.5em;
+  bottom: 0.5em;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -176,7 +176,7 @@ nav {
 
 .center {
   display: flex;
-  height: 86vh;
+  height: 84vh;
   justify-content: center;
   align-items: center;
   margin-top: 14vh;
@@ -201,6 +201,7 @@ nav {
 
 .image1 {
   padding: 20px;
+  width: 50%;
 }
 
 .image1 img {
@@ -744,6 +745,14 @@ nav {
   cursor: pointer;
 }
 
+.nextarrow img {
+  width: 65%;
+}
+
+.previousarrow img {
+  width: 65%;
+}
+
 @media screen and (max-width: 1024px) {
   .nav-links {
     display: flex;
@@ -823,7 +832,7 @@ nav {
   .text1 {
     width: 100vw;
     margin: 0;
-    font-size: 20px;
+    font-size: 3vh;
   }
 
   .joinus {
@@ -1028,5 +1037,17 @@ nav {
 
   .searchbox {
     width: 90%;
+  }
+
+  .nextarrow {
+    display: none;
+  }
+
+  .previousarrow {
+    display: none;
+  }
+
+  .image1 {
+    width: 100%;
   }
 }

@@ -10,6 +10,8 @@ navSlide()
 const sliderElem = document.querySelector('.slider')
 const dotElems = sliderElem.querySelectorAll('.slider__dot')
 const indicatorElem = sliderElem.querySelector('.slider__indicator')
+const nextarrowElem = document.querySelector('.nextarrow img')
+const prevarrowElem = document.querySelector('.previousarrow img')
 
 Array.prototype.forEach.call(dotElems, (dotElem) => {
   dotElem.addEventListener('click', (e) => {
@@ -22,6 +24,7 @@ Array.prototype.forEach.call(dotElems, (dotElem) => {
     indicatorElem.classList.remove(`slider__indicator--${currentDirection}`)
     indicatorElem.classList.add(`slider__indicator--${newDirection}`)
     sliderElem.setAttribute('data-pos', newPos)
+    arrowvanish()
   })
 })
 const swiping = () => {
@@ -45,3 +48,40 @@ const swiping = () => {
   })
 }
 swiping()
+const arrow = () => {
+  nextarrowElem.addEventListener('click', function (e) {
+    const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
+    const newPos = currentPos + 1
+    if (newPos < 4) {
+      indicatorElem.className = 'slider__indicator'
+      indicatorElem.classList.add('slider__indicator--right')
+      sliderElem.setAttribute('data-pos', newPos)
+      arrowvanish()
+    }
+  })
+  prevarrowElem.addEventListener('click', function (e) {
+    const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
+    const newPos = currentPos - 1
+    if (newPos > -1) {
+      indicatorElem.className = 'slider__indicator'
+      indicatorElem.classList.add('slider__indicator--left')
+      sliderElem.setAttribute('data-pos', newPos)
+      arrowvanish()
+    }
+  })
+}
+arrow()
+const arrowvanish = () => {
+  const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
+  if (currentPos === 0) {
+    prevarrowElem.style.opacity = 0
+    nextarrowElem.style.opacity = 1
+  } else if (currentPos === 3) {
+    prevarrowElem.style.opacity = 1
+    nextarrowElem.style.opacity = 0
+  } else {
+    prevarrowElem.style.opacity = 1
+    nextarrowElem.style.opacity = 1
+  }
+}
+arrowvanish()
