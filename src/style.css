@@ -741,4 +741,10 @@ nav {
     margin-left: 30vw;
     margin-right: 30vw;
   }
+  .aboutus strong{
+    margin-left:10vw;
+  }
+  .fromourblog strong{
+    margin-left:10vw;
+  }
 }
