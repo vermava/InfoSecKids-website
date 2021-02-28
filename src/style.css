@@ -173,6 +173,7 @@ nav {
   height: 86vh;
   justify-content: center;
   align-items: center;
+  margin-top: 14vh;
 }
 
 .center1 {
@@ -787,5 +788,9 @@ nav {
 
   .filters {
     width: 80%;
+  }
+
+  .center {
+    margin-top: 0;
   }
 }
