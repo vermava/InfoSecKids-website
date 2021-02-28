@@ -902,6 +902,10 @@ nav {
     width: 60%;
   }
 
+  .searchbutton {
+    width: 90%;
+  }
+
   .filters {
     width: 80%;
   }
