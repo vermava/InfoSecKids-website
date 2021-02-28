@@ -388,6 +388,14 @@ nav {
   font-weight: 900;
 }
 
+.filters strong {
+  font-size: 20px;
+}
+
+.catlist strong {
+  font-weight: bolder;
+}
+
 .blog:nth-child(4) strong {
   color: #f41971;
 }
@@ -497,21 +505,21 @@ nav {
 .search {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   margin-top: 14vh;
 }
 
 .textcont {
-  width: 40%;
+  width: 70%;
 }
 
 .searchbuttoncont {
-  width: 42.5%;
+  width: 30%;
 }
 
 .searchbox {
   background-color: #fff;
-  width: 90%;
+  width: 95%;
   height: 7vh;
   color: #00c3f7;
   border: 3px solid #000;
@@ -527,10 +535,10 @@ nav {
   background-color: #f41971;
   color: #fff;
   cursor: pointer;
-  border-radius: 12.5px;
+  border-radius: 20px;
   outline: none;
   border: none;
-  width: 35%;
+  width: 60%;
   height: 7vh;
   font-size: 25px;
   margin: 20px;
@@ -562,7 +570,7 @@ nav {
 
 .eventdetails {
   display: flex;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .eventdetailsimg {
@@ -591,7 +599,8 @@ nav {
 }
 
 .eventlist {
-  width: 60%;
+  width: 65%;
+  border-right: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 .tagdatecont {
@@ -604,9 +613,10 @@ nav {
 }
 
 .filters {
-  width: 20%;
-  font-size: 20px;
+  width: 10%;
+  font-size: 15px;
   font-family: 'Poppins', sans-serif;
+  margin-left: 50px;
 }
 
 .eventtag img {
@@ -621,9 +631,29 @@ nav {
   margin-top: 10px;
 }
 
-.catlist input {
-  height: 15px;
-  width: 15px;
+.catlist {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.check1 {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.catlist .check1 input,
+.check1 img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.searchsearchbuttoncont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -793,7 +823,7 @@ nav {
   .text1 {
     width: 100vw;
     margin: 0;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .joinus {
@@ -909,6 +939,7 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+    width: 100%;
   }
 
   .textcont {
@@ -993,5 +1024,9 @@ nav {
     display: flex;
     justify-content: center;
     width: 95%;
+  }
+
+  .searchbox {
+    width: 90%;
   }
 }
