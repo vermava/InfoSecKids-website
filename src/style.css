@@ -741,10 +741,51 @@ nav {
     margin-left: 30vw;
     margin-right: 30vw;
   }
-  .aboutus strong{
-    margin-left:10vw;
+
+  .aboutus strong {
+    margin-left: 10vw;
   }
-  .fromourblog strong{
-    margin-left:10vw;
+
+  .eventlistcont {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .eventdetails {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eventdetailsimg {
+    width: 80%;
+  }
+
+  .eventdetailsdetail {
+    width: 80%;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .eventlist {
+    width: 100%;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .textcont {
+    width: 100%;
+  }
+
+  .searchbuttoncont {
+    width: 60%;
+  }
+
+  .filters {
+    width: 80%;
   }
 }
