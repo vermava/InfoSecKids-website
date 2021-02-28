@@ -824,7 +824,7 @@ nav {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    font-size:15px;
+    font-size: 15px;
   }
 
   .continuereading {
@@ -835,28 +835,28 @@ nav {
     width: 90vw;
     padding: 20px;
     padding-top: 15vw;
-    font-size:15px;
+    font-size: 15px;
   }
 
   .about2 {
     width: 90vw;
     padding: 20px;
     padding-top: 15vw;
-    font-size:15px;
+    font-size: 15px;
   }
 
   .aboutimg1 {
-    width: 35vw;
-    height: 35vw;
-    margin-left: 27.5vw;
-    margin-right: 27.5vw;
+    width: 30vw;
+    height: 30vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
   }
 
   .aboutimg2 {
-    width: 35vw;
-    height: 35vw;
-    margin-left: 27.5vw;
-    margin-right: 27.5vw;
+    width: 30vw;
+    height: 30vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
   }
 
   .aboutus strong {
@@ -920,6 +920,7 @@ nav {
   .signup,
   .social {
     width: 100%;
+    font-size: 15px;
   }
 
   .navbarlink {
@@ -955,13 +956,21 @@ nav {
     width: 55%;
   }
 
+  .first3 li {
+    font-size: 15px;
+  }
+
   .last3 {
     width: 45%;
+  }
+
+  .last3 li {
+    font-size: 15px;
   }
 
   .email {
     display: flex;
     justify-content: center;
-    width:95%;
+    width: 95%;
   }
 }
