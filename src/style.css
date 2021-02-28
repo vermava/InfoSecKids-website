@@ -727,7 +727,7 @@ nav {
 .inputemail::placeholder {
   color: #787373;
   font-size: 15px;
-  line-height: 30px;
+  font-weight: lighter;
 }
 
 .signupsubmit {
@@ -743,6 +743,7 @@ nav {
   margin-left: -5px;
   margin-top: 10px;
   cursor: pointer;
+  font-weight: bolder;
 }
 
 .nextarrow img {
