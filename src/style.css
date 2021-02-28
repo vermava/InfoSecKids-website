@@ -397,19 +397,19 @@ nav {
   font-weight: bolder;
 }
 
-.blog:nth-child(4) strong {
+.blog:nth-child(3) strong {
   color: #f41971;
 }
 
-.blog:nth-child(5) strong {
+.blog:nth-child(4) strong {
   color: #00c3f7;
 }
 
-.blog:nth-child(6) strong {
+.blog:nth-child(5) strong {
   color: #98d800;
 }
 
-.blog:nth-child(7) strong {
+.blog:nth-child(6) strong {
   color: #f41971;
 }
 
