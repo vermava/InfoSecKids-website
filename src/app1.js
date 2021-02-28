@@ -1,5 +1,13 @@
-function load () {
-  const mydata = JSON.parse(data)
+async function postData (url = '', data = {}) {
+  const response = await fetch(url)
+  return response.json()
+}
+
+postData('data.json')
+  .then(data => {
+    load(data.data)
+  })
+function load (mydata) {
   let i
   for (i = 0; i < mydata.length; i++) {
     const a = document.createElement('div')
@@ -41,4 +49,3 @@ function load () {
     b.appendChild(y)
   }
 }
-load()
