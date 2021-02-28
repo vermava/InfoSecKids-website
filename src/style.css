@@ -88,7 +88,7 @@ nav {
   overflow: hidden;
 }
 
-.slider__slides {
+.sliderslides {
   position: relative;
   width: 400%;
   height: 100%;
@@ -96,23 +96,23 @@ nav {
   will-change: transform;
 }
 
-.slider[data-pos="0"] .slider__slides {
+.slider[data-pos="0"] .sliderslides {
   transform: translateX(0%);
 }
 
-.slider[data-pos="1"] .slider__slides {
+.slider[data-pos="1"] .sliderslides {
   transform: translateX(-25%);
 }
 
-.slider[data-pos="2"] .slider__slides {
+.slider[data-pos="2"] .sliderslides {
   transform: translateX(-50%);
 }
 
-.slider[data-pos="3"] .slider__slides {
+.slider[data-pos="3"] .sliderslides {
   transform: translateX(-75%);
 }
 
-.slider__slide {
+.sliderslide {
   float: left;
   width: 25%;
   height: 100%;
@@ -122,7 +122,7 @@ nav {
   align-items: center;
 }
 
-.slider__dots {
+.sliderdots {
   display: flex;
   position: absolute;
   bottom: 0.5em;
@@ -130,8 +130,8 @@ nav {
   transform: translateX(-50%);
 }
 
-.slider__dot,
-.slider__indicator {
+.sliderdot,
+.sliderindicator {
   display: block;
   margin: 0 0.5em;
   width: 1em;
@@ -140,36 +140,36 @@ nav {
   border-radius: 100px;
 }
 
-.slider__indicator {
+.sliderindicator {
   position: absolute;
   background: #98d800;
   width: auto;
 }
 
-.slider__indicator--left {
+.sliderindicator--left {
   transition: left 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15), right 0.3s 0.1s cubic-bezier(0.51, 0.92, 0.24, 1.15);
 }
 
-.slider__indicator--right {
+.sliderindicator--right {
   transition: left 0.3s 0.1s cubic-bezier(0.51, 0.92, 0.24, 1.15), right 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
 }
 
-.slider[data-pos="0"] .slider__indicator {
+.slider[data-pos="0"] .sliderindicator {
   left: 0;
   right: 6em;
 }
 
-.slider[data-pos="1"] .slider__indicator {
+.slider[data-pos="1"] .sliderindicator {
   left: 2em;
   right: 4em;
 }
 
-.slider[data-pos="2"] .slider__indicator {
+.slider[data-pos="2"] .sliderindicator {
   left: 4em;
   right: 2em;
 }
 
-.slider[data-pos="3"] .slider__indicator {
+.slider[data-pos="3"] .sliderindicator {
   left: 6em;
   right: 0;
 }
@@ -825,7 +825,7 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
-  .slider__slide {
+  .sliderslide {
     flex-direction: column;
     align-items: center;
   }

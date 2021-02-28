@@ -8,8 +8,8 @@ const navSlide = () => {
 }
 navSlide()
 const sliderElem = document.querySelector('.slider')
-const dotElems = sliderElem.querySelectorAll('.slider__dot')
-const indicatorElem = sliderElem.querySelector('.slider__indicator')
+const dotElems = sliderElem.querySelectorAll('.sliderdot')
+const indicatorElem = sliderElem.querySelector('.sliderindicator')
 const nextarrowElem = document.querySelector('.nextarrow img')
 const prevarrowElem = document.querySelector('.previousarrow img')
 
@@ -21,8 +21,8 @@ Array.prototype.forEach.call(dotElems, (dotElem) => {
     const newDirection = (newPos > currentPos ? 'right' : 'left')
     const currentDirection = (newPos < currentPos ? 'right' : 'left')
 
-    indicatorElem.classList.remove(`slider__indicator--${currentDirection}`)
-    indicatorElem.classList.add(`slider__indicator--${newDirection}`)
+    indicatorElem.classList.remove(`sliderindicator--${currentDirection}`)
+    indicatorElem.classList.add(`sliderindicator--${newDirection}`)
     sliderElem.setAttribute('data-pos', newPos)
     arrowvanish()
   })
@@ -32,8 +32,8 @@ const swiping = () => {
     const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
     const newPos = currentPos + 1
     if (newPos < 4) {
-      indicatorElem.className = 'slider__indicator'
-      indicatorElem.classList.add('slider__indicator--right')
+      indicatorElem.className = 'sliderindicator'
+      indicatorElem.classList.add('sliderindicator--right')
       sliderElem.setAttribute('data-pos', newPos)
     }
   })
@@ -41,8 +41,8 @@ const swiping = () => {
     const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
     const newPos = currentPos - 1
     if (newPos > -1) {
-      indicatorElem.className = 'slider__indicator'
-      indicatorElem.classList.add('slider__indicator--left')
+      indicatorElem.className = 'sliderindicator'
+      indicatorElem.classList.add('sliderindicator--left')
       sliderElem.setAttribute('data-pos', newPos)
     }
   })
@@ -53,8 +53,8 @@ const arrow = () => {
     const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
     const newPos = currentPos + 1
     if (newPos < 4) {
-      indicatorElem.className = 'slider__indicator'
-      indicatorElem.classList.add('slider__indicator--right')
+      indicatorElem.className = 'sliderindicator'
+      indicatorElem.classList.add('sliderindicator--right')
       sliderElem.setAttribute('data-pos', newPos)
       arrowvanish()
     }
@@ -63,8 +63,8 @@ const arrow = () => {
     const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
     const newPos = currentPos - 1
     if (newPos > -1) {
-      indicatorElem.className = 'slider__indicator'
-      indicatorElem.classList.add('slider__indicator--left')
+      indicatorElem.className = 'sliderindicator'
+      indicatorElem.classList.add('sliderindicator--left')
       sliderElem.setAttribute('data-pos', newPos)
       arrowvanish()
     }
