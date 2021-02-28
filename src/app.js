@@ -30,7 +30,7 @@ const swiping = () => {
     const newPos = currentPos + 1
     if (newPos < 4) {
       indicatorElem.className = 'slider__indicator'
-      indicatorElem.classList.add('slider__indicator--left')
+      indicatorElem.classList.add('slider__indicator--right')
       sliderElem.setAttribute('data-pos', newPos)
     }
   })
@@ -39,7 +39,7 @@ const swiping = () => {
     const newPos = currentPos - 1
     if (newPos > -1) {
       indicatorElem.className = 'slider__indicator'
-      indicatorElem.classList.add('slider__indicator--right')
+      indicatorElem.classList.add('slider__indicator--left')
       sliderElem.setAttribute('data-pos', newPos)
     }
   })
