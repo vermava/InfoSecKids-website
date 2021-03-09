@@ -785,7 +785,6 @@ ul.mentorul li {
   display: flex;
   width: 30%;
   justify-content: space-around;
-  align-items: center;
 }
 
 .first3 li a {
@@ -1238,7 +1237,7 @@ ul.mentorul li::before {
   }
 
   .first3 {
-    width: 55%;
+    width: 50%;
   }
 
   .first3 li {
@@ -1246,7 +1245,7 @@ ul.mentorul li::before {
   }
 
   .last3 {
-    width: 45%;
+    width: 50%;
   }
 
   .last3 li {
