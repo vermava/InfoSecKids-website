@@ -954,7 +954,6 @@ ul.mentorul li::before {
 
 .text2 li::before {
   content: "\2022";
-  color: #f41971;
   font-weight: bold;
   display: inline-block;
   width: 1em;
