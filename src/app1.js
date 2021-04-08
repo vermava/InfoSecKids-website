@@ -61,18 +61,16 @@ function load (mydata) {
         <header class="w3-container contreading${i%3+1}"> 
             <span onclick="document.getElementsByClassName('id01')[${i}].style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2 style="color:#ffffff;">${mydata[i].title}</h2>
+            <h2 style="color:#ffffff;margin-right:15px;">${mydata[i].title}</h2>
         </header>
         <div class="w3-container">
-            <p class="txtevent" style="font-size:20px;"></p>
+            <p class="txtevent"></p>
         </div>
         <footer class="w3-container contreading${i%3+1}">
             <p style="padding-top:5px;padding-bottom:5px;color:#ffffff;">${mydata[i].date}</p>
         </footer>
         </div>
         </div>
-    
-    
     ` 
   }
   postData1(mydata[0].content)
@@ -99,7 +97,7 @@ searchBar.addEventListener('keyup', (e) => {
         return (
           character.title.toLowerCase().includes(searchString) ||
             character.date.toLowerCase().includes(searchString) ||
-            character.content.toLowerCase().includes(searchString)
+            character.description.toLowerCase().includes(searchString)
         )
       })
       if (filteredCharacters.length == 0) {
