@@ -26,13 +26,13 @@ const displayCharacters = (character) => {
         
         <button onclick="document.getElementsByClassName('id01')[${i}].style.display='block'" class="continuereading continuereading${i%3+1}">Continue Reading</button><br><br><br>
         <div class="id01 w3-modal" style="margin-top:10px;">
-        <div class="w3-modal-content w3-animate-top w3-card-4" style="border-radius:10px;">
+        <div class="w3-modal-content w3-animate-top w3-card-4 margincont" style="border-radius:10px;">
         <header class="w3-container contreading${i%3+1}"> 
             <span onclick="document.getElementsByClassName('id01')[${i}].style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2 style="color:#ffffff;margin-right:15px;" class="qwerty">${character[i].title.toLowerCase()}</h2>
+            <h2 style="color:#ffffff;margin-right:30px;" class="qwerty">${character[i].title.toLowerCase()}</h2>
         </header>
-        <div class="w3-container">
+        <div class="w3-container" style="margin-bottom:20px;">
             <p class="txtevent"></p>
         </div>
         <footer class="w3-container contreading${i%3+1}">

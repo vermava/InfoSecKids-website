@@ -965,7 +965,7 @@ ul.mentorul li {
   width: 35vw;
   margin-top: 40px;
   margin-left: 3vw;
-  transition: 0.2s;
+  transition: 0.5s;
   transform-origin: right;
   transform: scaleX(0);
 }
@@ -1085,6 +1085,7 @@ ul.mentorul li::before {
 .txtevent{
   font-size: 20px;
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .txtevent strong{
@@ -1094,10 +1095,13 @@ ul.mentorul li::before {
 .qwerty{
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
 }
 .datecont{
   font-size: 20px;
+}
+.margincont{
+  margin-bottom:50px;
 }
 @media screen and (max-width: 1024px) {
   .nav-links {
@@ -1503,8 +1507,11 @@ ul.mentorul li::before {
   .id01{
     top:10vh;
   }
+  .txtevent, .txtevent strong{
+    font-size: 15px;
+  }
   .txtevent{
-    font-size: 20px;
+    margin-bottom: 30px;
   }
   .socialico{
     justify-content: space-between;
@@ -1512,5 +1519,8 @@ ul.mentorul li::before {
   }
   .socialico img{
     margin-right:0px;
+  }
+  .margincont{
+    margin-bottom:125px;
   }
 }
