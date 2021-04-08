@@ -1,8 +1,12 @@
+document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" ></script>')
 async function postData (url = '', data = {}) {
   const response = await fetch(url)
   return response.json()
 }
-
+async function postData1 (url = '', data = {}) {
+  const response = await fetch(url)
+  return response.text()
+}
 postData('data.json')
   .then(data => {
     console.log(data.data)
@@ -43,12 +47,46 @@ function load (mydata) {
     document.getElementsByClassName('tagdatecont')[i].appendChild(f)
     const g = document.createElement('div')
     g.setAttribute('class', 'eventabout')
-    g.innerHTML = mydata[i].content
+    g.innerHTML = mydata[i].description
     document.getElementsByClassName('eventdetailsdetail')[i].appendChild(g)
     const y = document.createElement('IMG')
     y.setAttribute('src', mydata[i].image)
     b.appendChild(y)
+
+    g.innerHTML = g.innerHTML + '<br><br><br>' +
+    `
+    <button style="margin-left:10px" onclick="document.getElementsByClassName('id01')[${i}].style.display='block'" class="continuereading continuereading${i%3+1}">Continue Reading</button><br><br><br>
+        <div class="id01 w3-modal" style="margin-top:10px;">
+        <div class="w3-modal-content w3-animate-top w3-card-4" style="border-radius:10px;">
+        <header class="w3-container contreading${i%3+1}"> 
+            <span onclick="document.getElementsByClassName('id01')[${i}].style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2 style="color:#ffffff;">${mydata[i].title}</h2>
+        </header>
+        <div class="w3-container">
+            <p class="txtevent" style="font-size:20px;"></p>
+        </div>
+        <footer class="w3-container contreading${i%3+1}">
+            <p style="padding-top:5px;padding-bottom:5px;color:#ffffff;">${mydata[i].date}</p>
+        </footer>
+        </div>
+        </div>
+    
+    
+    ` 
   }
+  postData1(mydata[0].content)
+    .then(data => {
+      document.querySelectorAll('.txtevent')[0].innerHTML = marked(data)
+    })
+  postData1(mydata[1].content)
+    .then(data => {
+      document.querySelectorAll('.txtevent')[1].innerHTML = marked(data)
+    })
+  postData1(mydata[2].content)
+    .then(data => {
+      document.querySelectorAll('.txtevent')[2].innerHTML = marked(data)
+    })
 }
 
 const searchBar = document.getElementById('searchBar')
