@@ -30,7 +30,7 @@ const displayCharacters = (character) => {
         <header class="w3-container contreading${i%3+1}"> 
             <span onclick="document.getElementsByClassName('id01')[${i}].style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2 style="color:#ffffff;">${character[i].title}</h2>
+            <h2 style="color:#ffffff;margin-right:15px;">${character[i].title}</h2>
         </header>
         <div class="w3-container">
             <p class="txtevent" style="font-size:20px;"></p>
