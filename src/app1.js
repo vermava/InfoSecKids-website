@@ -61,13 +61,13 @@ function load (mydata) {
         <header class="w3-container contreading${i%3+1}"> 
             <span onclick="document.getElementsByClassName('id01')[${i}].style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2 style="color:#ffffff;margin-right:15px;">${mydata[i].title}</h2>
+            <h2 style="color:#ffffff;margin-right:15px;" class="qwerty">${mydata[i].title.toLowerCase()}</h2>
         </header>
         <div class="w3-container">
             <p class="txtevent"></p>
         </div>
         <footer class="w3-container contreading${i%3+1}">
-            <p style="padding-top:5px;padding-bottom:5px;color:#ffffff;">${mydata[i].date}</p>
+            <p style="padding-top:5px;padding-bottom:5px;color:#ffffff;" class="datecont">${mydata[i].date}</p>
         </footer>
         </div>
         </div>
@@ -101,7 +101,7 @@ searchBar.addEventListener('keyup', (e) => {
         )
       })
       if (filteredCharacters.length == 0) {
-        document.getElementsByClassName('eventlist')[0].innerHTML = 'No Results Found'
+        document.getElementsByClassName('eventlist')[0].innerHTML = 'No Results Found<br><br><br><br><br>'
       } else {
         document.getElementsByClassName('eventlist')[0].innerHTML = ''
         load(filteredCharacters)
