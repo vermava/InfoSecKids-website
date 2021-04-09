@@ -1,11 +1,21 @@
 document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" ></script>')
 async function postData (url = '', data = {}) {
   const response = await fetch(url)
-  return response.json()
+  let out = await response.json()
+  if(out!=undefined){
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden";
+    return out;
+  }
 }
 async function postData1 (url = '', data = {}) {
   const response = await fetch(url)
-  return response.text()
+  let out = await response.text()
+  if(out!=undefined){
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden";
+    return out;
+  }
 }
 postData('data.json')
   .then(data => {
