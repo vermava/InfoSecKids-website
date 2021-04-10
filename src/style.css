@@ -397,7 +397,7 @@ ul.mentorul li {
   outline: none;
   padding-left: 15px;
   padding-right: 15px;
-  height: 6vh;
+  height: 2.5em;
   border-radius: 12.5px;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
@@ -439,6 +439,7 @@ ul.mentorul li {
 .whyinfosecgirls {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   transition: 0.5s all ease-in;
   opacity: 0;
 }
@@ -451,6 +452,7 @@ ul.mentorul li {
 .ouraim {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row-reverse;
   transition: 0.5s all ease-in;
   opacity: 0;
@@ -464,6 +466,7 @@ ul.mentorul li {
 .howyoucanhelp {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   transition: 0.5s all ease-in;
   opacity: 0;
 }
@@ -850,7 +853,8 @@ ul.mentorul li {
   align-items: center;
 }
 
-.footer {
+.footer,
+.footer5 {
   width: 100%;
   background-color: #00c3f7;
   color: #fff;
@@ -1141,7 +1145,51 @@ ul.mentorul li::before {
   .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 55%;
+  }
+
+  .center {
+    height: auto;
+    margin-top: 20vh;
+    margin-bottom: 3vh;
+  }
+
+  .text1 {
+    font-size: 20px;
+  }
+
+  .joinus {
+    height: 2.25em;
+  }
+
+  .text2 {
+    width: 55%;
+  }
+
+  .blog {
+    margin-left: 40px;
+    width: 70vw;
+  }
+
+  .fromourblog strong {
+    margin-left: 40px;
+  }
+
+  .blog strong {
+    margin-left: 0;
+  }
+
+  .contacttxt {
+    width: 45vw;
+  }
+
+  .footer5 {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .main {
+    margin-top: 14vh;
   }
 }
 
@@ -1356,7 +1404,8 @@ ul.mentorul li::before {
     margin-top: 0;
   }
 
-  .footer {
+  .footer,
+  .footer5 {
     flex-direction: column;
     align-items: center;
     padding-left: 20px;

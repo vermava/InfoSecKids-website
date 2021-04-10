@@ -1,13 +1,12 @@
 document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" ></script>')
 async function postData (url = '', data = {}) {
-  const loader = document.querySelector(".loader");
-  loader.className="loader"
+  const loader = document.querySelector('.loader')
+  loader.className = 'loader'
   const response = await fetch(url)
-  let out = await response.json()
-  if(out!=undefined){
-    
-    loader.className += " hidden";
-    return out;
+  const out = await response.json()
+  if (out != undefined) {
+    loader.className += ' hidden';
+    return out
   }
 }
 async function postData3 (url = '', data = {}) {
@@ -20,7 +19,7 @@ async function postData1 (url = '', data = {}) {
 }
 async function postData5 (url = '', index) {
   const response = await fetch(url)
-  return [response.text(),index]
+  return [response.text(), index]
 }
 postData('data.json')
   .then(data => {
@@ -69,10 +68,10 @@ function load (mydata) {
 
     g.innerHTML = g.innerHTML + '<br><br><br>' +
     `
-    <button style="margin-left:10px" onclick="document.getElementsByClassName('id01')[${i}].style.display='block'" class="continuereading continuereading${i%3+1}">Continue Reading</button><br><br><br>
+    <button style="margin-left:10px" onclick="document.getElementsByClassName('id01')[${i}].style.display='block'" class="continuereading continuereading${i % 3 + 1}">Continue Reading</button><br><br><br>
         <div class="id01 w3-modal" style="margin-top:10px;">
         <div class="w3-modal-content w3-animate-top w3-card-4 margincont" style="border-radius:10px;">
-        <header class="w3-container contreading${i%3+1}"> 
+        <header class="w3-container contreading${i % 3 + 1}"> 
             <span onclick="document.getElementsByClassName('id01')[${i}].style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
             <h2 style="color:#ffffff;margin-right:15px;" class="qwerty">${mydata[i].title.toLowerCase()}</h2>
@@ -80,21 +79,19 @@ function load (mydata) {
         <div class="w3-container">
             <p class="txtevent"></p>
         </div>
-        <footer class="w3-container contreading${i%3+1}">
+        <footer class="w3-container contreading${i % 3 + 1}">
             <p style="padding-top:5px;padding-bottom:5px;color:#ffffff;" class="datecont">${mydata[i].date}</p>
         </footer>
         </div>
         </div>
-    ` 
-    postData5(mydata[i].content,i)
-    .then((data) => {
-      data[0].then((qwer)=>{
-        document.querySelectorAll('.txtevent')[data[1]].innerHTML = marked(qwer)
+    `
+    postData5(mydata[i].content, i)
+      .then((data) => {
+        data[0].then((qwer) => {
+          document.querySelectorAll('.txtevent')[data[1]].innerHTML = marked(qwer)
+        })
       })
-      
-  })
-
-}
+  }
 }
 
 const searchBar = document.getElementById('searchBar')
