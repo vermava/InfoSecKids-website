@@ -47,6 +47,7 @@ nav {
   z-index: 5;
   position: fixed;
   background-color: #fff;
+  overflow-y: hidden;
 }
 
 .container {
@@ -1191,6 +1192,10 @@ ul.mentorul li::before {
     margin-top: 14vh;
   }
 
+}
+.id01 {
+  position:fixed;
+  top:5vh;
 }
 
 @media screen and (max-width: 768px) {
