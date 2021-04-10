@@ -18,9 +18,12 @@ async function postData1 (url = '', data = {}) {
   const response = await fetch(url)
   return response.text()
 }
+async function postData5 (url = '', index) {
+  const response = await fetch(url)
+  return [response.text(),index]
+}
 postData('data.json')
   .then(data => {
-    console.log(data.data)
     load(data.data)
   })
 function load (mydata) {
@@ -83,19 +86,15 @@ function load (mydata) {
         </div>
         </div>
     ` 
-  }
-  postData1(mydata[0].content)
-    .then(data => {
-      document.querySelectorAll('.txtevent')[0].innerHTML = marked(data)
-    })
-  postData1(mydata[1].content)
-    .then(data => {
-      document.querySelectorAll('.txtevent')[1].innerHTML = marked(data)
-    })
-  postData1(mydata[2].content)
-    .then(data => {
-      document.querySelectorAll('.txtevent')[2].innerHTML = marked(data)
-    })
+    postData5(mydata[i].content,i)
+    .then((data) => {
+      data[0].then((qwer)=>{
+        document.querySelectorAll('.txtevent')[data[1]].innerHTML = marked(qwer)
+      })
+      
+  })
+
+}
 }
 
 const searchBar = document.getElementById('searchBar')
