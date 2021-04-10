@@ -5,7 +5,7 @@ async function postData (url = '', data = {}) {
   const response = await fetch(url)
   const out = await response.json()
   if (out != undefined) {
-    loader.className += ' hidden';
+    loader.className += ' hidden'
     return out
   }
 }
@@ -99,9 +99,9 @@ const check4 = document.forms.filter.checkbox3
 const checkbar = document.forms.filter
 const searchBar = document.getElementById('searchBar')
 searchBar.addEventListener('keyup', (e) => {
-  check2.checked=true
-  check3.checked=true
-  check4.checked=true
+  check2.checked = true
+  check3.checked = true
+  check4.checked = true
   postData3('data.json')
     .then(data => {
       const searchString = e.target.value.toLowerCase()
@@ -121,7 +121,6 @@ searchBar.addEventListener('keyup', (e) => {
       }
     })
 })
-
 
 checkbar.addEventListener('change', function () {
   if (check2.checked == false && check3.checked == false && check4.checked == false) {

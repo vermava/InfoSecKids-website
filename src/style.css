@@ -54,7 +54,8 @@ nav {
   width: 100vw;
 }
 
-.main, .main10 {
+.main,
+.main10 {
   z-index: -1;
 }
 
@@ -1188,14 +1189,15 @@ ul.mentorul li::before {
     position: fixed;
     bottom: 0;
   }
-  .main10{
+
+  .main10 {
     margin-top: 14vh;
   }
-
 }
+
 .id01 {
-  position:fixed;
-  top:5vh;
+  position: fixed;
+  top: 5vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -1209,7 +1211,8 @@ ul.mentorul li::before {
     padding-right: 30px;
   }
 
-  .main, .main10 {
+  .main,
+  .main10 {
     margin-top: 14vh;
   }
 
