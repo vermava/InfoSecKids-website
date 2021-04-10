@@ -88,7 +88,7 @@ const arrowvanish = () => {
 arrowvanish()
 
 const load3 = () => {
-  if (abc == 0) {
+  if (abc === 0) {
     const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
     const newPos = currentPos + 1
     if (newPos < 4) {
@@ -104,7 +104,7 @@ const load3 = () => {
 }
 
 const load4 = () => {
-  if (abc == 0) {
+  if (abc === 0) {
     const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
     const newPos = currentPos - 1
     if (newPos > -1) {

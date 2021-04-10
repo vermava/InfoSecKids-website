@@ -4,10 +4,6 @@ async function postData (url = '', data = {}) {
   return response.json()
 }
 
-async function postData1 (url = '', data = {}) {
-  const response = await fetch(url)
-  return response.text()
-}
 async function postData5 (url = '', index) {
   const response = await fetch(url)
   return [response.text(), index]

@@ -4,7 +4,7 @@ async function postData (url = '', data = {}) {
   loader.className = 'loader'
   const response = await fetch(url)
   const out = await response.json()
-  if (out != undefined) {
+  if (out !== undefined) {
     loader.className += ' hidden'
     return out
   }
@@ -12,10 +12,6 @@ async function postData (url = '', data = {}) {
 async function postData3 (url = '', data = {}) {
   const response = await fetch(url)
   return response.json()
-}
-async function postData1 (url = '', data = {}) {
-  const response = await fetch(url)
-  return response.text()
 }
 async function postData5 (url = '', index) {
   const response = await fetch(url)
@@ -113,7 +109,7 @@ searchBar.addEventListener('keyup', (e) => {
             character.description.toLowerCase().includes(searchString)
         )
       })
-      if (filteredCharacters.length == 0) {
+      if (filteredCharacters.length === 0) {
         document.getElementsByClassName('eventlist')[0].innerHTML = 'No Results Found<br><br><br><br><br>'
       } else {
         document.getElementsByClassName('eventlist')[0].innerHTML = ''
@@ -123,7 +119,7 @@ searchBar.addEventListener('keyup', (e) => {
 })
 
 checkbar.addEventListener('change', function () {
-  if (check2.checked == false && check3.checked == false && check4.checked == false) {
+  if (check2.checked === false && check3.checked === false && check4.checked === false) {
     document.getElementsByClassName('eventlist')[0].innerHTML = 'No Results Found'
   } else {
     let car = []
@@ -133,7 +129,7 @@ checkbar.addEventListener('change', function () {
         .then(data => {
           const filteredCharacters1 = data.data.filter((character) => {
             return (
-              character.tag == 'Community'
+              character.tag === 'Community'
             )
           })
           document.getElementsByClassName('eventlist')[0].innerHTML = ''
@@ -148,7 +144,7 @@ checkbar.addEventListener('change', function () {
         .then(data => {
           const filteredCharacters1 = data.data.filter((character) => {
             return (
-              character.tag == 'Event'
+              character.tag === 'Event'
             )
           })
           document.getElementsByClassName('eventlist')[0].innerHTML = ''
@@ -163,7 +159,7 @@ checkbar.addEventListener('change', function () {
         .then(data => {
           const filteredCharacters1 = data.data.filter((character) => {
             return (
-              character.tag == 'Webinar'
+              character.tag === 'Webinar'
             )
           })
           document.getElementsByClassName('eventlist')[0].innerHTML = ''

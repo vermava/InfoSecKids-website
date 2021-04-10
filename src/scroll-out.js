@@ -22,13 +22,10 @@ const ScrollOut = (function () {
   /** find elements */
   function $ (e, parent) {
     return !e || e.length === 0
-      ? // null or empty string returns empty array
-        []
+      ? []
       : e.nodeName
-        ? // a single element is wrapped in an array
-          [e]
-        : // selector and NodeList are converted to Element[]
-          [].slice.call(e[0].nodeName ? e : (parent || document.documentElement).querySelectorAll(e))
+        ? [e]
+        : [].slice.call(e[0].nodeName ? e : (parent || document.documentElement).querySelectorAll(e))
   }
   let count = 0
   function setAttrs (el, attrs) {
@@ -36,11 +33,11 @@ const ScrollOut = (function () {
     for (const key in attrs) {
       if (key.indexOf('_')) {
         console.log(count)
-        if (count == 0) {
+        if (count === 0) {
           const a = el.getAttribute('data-scroll')
           el.setAttribute('data-' + hyphenate(key), attrs[key])
           const b = el.getAttribute('data-scroll')
-          if (a != b && a == 'out' && b == 'in') {
+          if (a !== b && a === 'out' && b === 'in') {
             count += 1
           }
         } else {
@@ -133,8 +130,8 @@ const ScrollOut = (function () {
       scrollingElementContext.scrollPercentX = scrollPercentX
       scrollingElementContext.scrollPercentY = scrollPercentY
       let childChanged = false
-      for (let index_1 = 0; index_1 < elementContextList.length; index_1++) {
-        const ctx = elementContextList[index_1]
+      for (let index1 = 0; index1 < elementContextList.length; index1++) {
+        const ctx = elementContextList[index1]
         const element = ctx.element
         // find the distance from the element to the scrolling container
         let target = element
@@ -172,7 +169,7 @@ const ScrollOut = (function () {
                   changedVisible ||
                   ctx.visibleX !== visibleX ||
                   ctx.visibleY !== visibleY ||
-                  ctx.index !== index_1 ||
+                  ctx.index !== index1 ||
                   ctx.elementHeight !== elementHeight ||
                   ctx.elementWidth !== elementWidth ||
                   ctx.offsetX !== offsetX ||
@@ -188,7 +185,7 @@ const ScrollOut = (function () {
           ctx.visible = visible
           ctx.elementHeight = elementHeight
           ctx.elementWidth = elementWidth
-          ctx.index = index_1
+          ctx.index = index1
           ctx.offsetX = offsetX
           ctx.offsetY = offsetY
           ctx.visibleX = visibleX
@@ -296,13 +293,10 @@ const ScrollOut1 = (function () {
   /** find elements */
   function $ (e, parent) {
     return !e || e.length === 0
-      ? // null or empty string returns empty array
-        []
+      ? []
       : e.nodeName
-        ? // a single element is wrapped in an array
-          [e]
-        : // selector and NodeList are converted to Element[]
-          [].slice.call(e[0].nodeName ? e : (parent || document.documentElement).querySelectorAll(e))
+        ? [e]
+        : [].slice.call(e[0].nodeName ? e : (parent || document.documentElement).querySelectorAll(e))
   }
   let count = 0
   function setAttrs (el, attrs) {
@@ -310,11 +304,11 @@ const ScrollOut1 = (function () {
     for (const key in attrs) {
       if (key.indexOf('_')) {
         console.log(count)
-        if (count == 0) {
+        if (count === 0) {
           const a = el.getAttribute('data-scroll')
           el.setAttribute('data-' + hyphenate(key), attrs[key])
           const b = el.getAttribute('data-scroll')
-          if (a != b && a == 'out' && b == 'in') {
+          if (a !== b && a === 'out' && b === 'in') {
             count += 1
           }
         } else {
@@ -407,8 +401,8 @@ const ScrollOut1 = (function () {
       scrollingElementContext.scrollPercentX = scrollPercentX
       scrollingElementContext.scrollPercentY = scrollPercentY
       let childChanged = false
-      for (let index_1 = 0; index_1 < elementContextList.length; index_1++) {
-        const ctx = elementContextList[index_1]
+      for (let index1 = 0; index1 < elementContextList.length; index1++) {
+        const ctx = elementContextList[index1]
         const element = ctx.element
         // find the distance from the element to the scrolling container
         let target = element
@@ -446,7 +440,7 @@ const ScrollOut1 = (function () {
                     changedVisible ||
                     ctx.visibleX !== visibleX ||
                     ctx.visibleY !== visibleY ||
-                    ctx.index !== index_1 ||
+                    ctx.index !== index1 ||
                     ctx.elementHeight !== elementHeight ||
                     ctx.elementWidth !== elementWidth ||
                     ctx.offsetX !== offsetX ||
@@ -462,7 +456,7 @@ const ScrollOut1 = (function () {
           ctx.visible = visible
           ctx.elementHeight = elementHeight
           ctx.elementWidth = elementWidth
-          ctx.index = index_1
+          ctx.index = index1
           ctx.offsetX = offsetX
           ctx.offsetY = offsetY
           ctx.visibleX = visibleX
@@ -570,13 +564,10 @@ const ScrollOut2 = (function () {
   /** find elements */
   function $ (e, parent) {
     return !e || e.length === 0
-      ? // null or empty string returns empty array
-        []
+      ? []
       : e.nodeName
-        ? // a single element is wrapped in an array
-          [e]
-        : // selector and NodeList are converted to Element[]
-          [].slice.call(e[0].nodeName ? e : (parent || document.documentElement).querySelectorAll(e))
+        ? [e]
+        : [].slice.call(e[0].nodeName ? e : (parent || document.documentElement).querySelectorAll(e))
   }
   let count = 0
   function setAttrs (el, attrs) {
@@ -584,11 +575,11 @@ const ScrollOut2 = (function () {
     for (const key in attrs) {
       if (key.indexOf('_')) {
         console.log(count)
-        if (count == 0) {
+        if (count === 0) {
           const a = el.getAttribute('data-scroll')
           el.setAttribute('data-' + hyphenate(key), attrs[key])
           const b = el.getAttribute('data-scroll')
-          if (a != b && a == 'out' && b == 'in') {
+          if (a !== b && a === 'out' && b === 'in') {
             count += 1
           }
         } else {
@@ -681,8 +672,8 @@ const ScrollOut2 = (function () {
       scrollingElementContext.scrollPercentX = scrollPercentX
       scrollingElementContext.scrollPercentY = scrollPercentY
       let childChanged = false
-      for (let index_1 = 0; index_1 < elementContextList.length; index_1++) {
-        const ctx = elementContextList[index_1]
+      for (let index1 = 0; index1 < elementContextList.length; index1++) {
+        const ctx = elementContextList[index1]
         const element = ctx.element
         // find the distance from the element to the scrolling container
         let target = element
@@ -720,7 +711,7 @@ const ScrollOut2 = (function () {
                     changedVisible ||
                     ctx.visibleX !== visibleX ||
                     ctx.visibleY !== visibleY ||
-                    ctx.index !== index_1 ||
+                    ctx.index !== index1 ||
                     ctx.elementHeight !== elementHeight ||
                     ctx.elementWidth !== elementWidth ||
                     ctx.offsetX !== offsetX ||
@@ -736,7 +727,7 @@ const ScrollOut2 = (function () {
           ctx.visible = visible
           ctx.elementHeight = elementHeight
           ctx.elementWidth = elementWidth
-          ctx.index = index_1
+          ctx.index = index1
           ctx.offsetX = offsetX
           ctx.offsetY = offsetY
           ctx.visibleX = visibleX
@@ -844,13 +835,10 @@ const ScrollOut3 = (function () {
   /** find elements */
   function $ (e, parent) {
     return !e || e.length === 0
-      ? // null or empty string returns empty array
-        []
+      ? []
       : e.nodeName
-        ? // a single element is wrapped in an array
-          [e]
-        : // selector and NodeList are converted to Element[]
-          [].slice.call(e[0].nodeName ? e : (parent || document.documentElement).querySelectorAll(e))
+        ? [e]
+        : [].slice.call(e[0].nodeName ? e : (parent || document.documentElement).querySelectorAll(e))
   }
   let count = 0
   function setAttrs (el, attrs) {
@@ -858,11 +846,11 @@ const ScrollOut3 = (function () {
     for (const key in attrs) {
       if (key.indexOf('_')) {
         console.log(count)
-        if (count == 0) {
+        if (count === 0) {
           const a = el.getAttribute('data-scroll')
           el.setAttribute('data-' + hyphenate(key), attrs[key])
           const b = el.getAttribute('data-scroll')
-          if (a != b && a == 'out' && b == 'in') {
+          if (a !== b && a === 'out' && b === 'in') {
             count += 1
           }
         } else {
@@ -955,8 +943,8 @@ const ScrollOut3 = (function () {
       scrollingElementContext.scrollPercentX = scrollPercentX
       scrollingElementContext.scrollPercentY = scrollPercentY
       let childChanged = false
-      for (let index_1 = 0; index_1 < elementContextList.length; index_1++) {
-        const ctx = elementContextList[index_1]
+      for (let index1 = 0; index1 < elementContextList.length; index1++) {
+        const ctx = elementContextList[index1]
         const element = ctx.element
         // find the distance from the element to the scrolling container
         let target = element
@@ -994,7 +982,7 @@ const ScrollOut3 = (function () {
                     changedVisible ||
                     ctx.visibleX !== visibleX ||
                     ctx.visibleY !== visibleY ||
-                    ctx.index !== index_1 ||
+                    ctx.index !== index1 ||
                     ctx.elementHeight !== elementHeight ||
                     ctx.elementWidth !== elementWidth ||
                     ctx.offsetX !== offsetX ||
@@ -1010,7 +998,7 @@ const ScrollOut3 = (function () {
           ctx.visible = visible
           ctx.elementHeight = elementHeight
           ctx.elementWidth = elementWidth
-          ctx.index = index_1
+          ctx.index = index1
           ctx.offsetX = offsetX
           ctx.offsetY = offsetY
           ctx.visibleX = visibleX
