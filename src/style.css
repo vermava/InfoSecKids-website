@@ -8,6 +8,7 @@
 body {
   position: relative;
 }
+
 .loader {
   position: fixed;
   z-index: 99;
@@ -20,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .loader.hidden {
   animation: fadeOut 1s;
   animation-fill-mode: forwards;
@@ -27,8 +29,8 @@ body {
 
 @keyframes fadeOut {
   100% {
-      opacity: 0;
-      visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -93,6 +95,11 @@ nav {
   list-style-type: none;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
+}
+
+.text2 li {
+  list-style: none;
+  float: left;
 }
 
 ul.mentorul li {
@@ -302,12 +309,14 @@ ul.mentorul li {
   width: 35vw;
 }
 
-.eventlist{
+.eventlist {
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 65%;
+  border-right: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 .text1 strong {
@@ -386,8 +395,8 @@ ul.mentorul li {
   background-color: #fff;
   border-style: solid;
   outline: none;
-  padding-left:15px;
-  padding-right:15px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 6vh;
   border-radius: 12.5px;
   font-size: 20px;
@@ -399,12 +408,15 @@ ul.mentorul li {
   border-color: #f41971;
   color: #f41971;
 }
+
 .contreading1 {
   background-color: #f41971;
 }
+
 .contreading2 {
   background-color: #00c3f7;
 }
+
 .contreading3 {
   background-color: #98d800;
 }
@@ -427,11 +439,12 @@ ul.mentorul li {
 .whyinfosecgirls {
   display: flex;
   justify-content: space-around;
-  transition:0.5s all ease-in;
-  opacity:0;
+  transition: 0.5s all ease-in;
+  opacity: 0;
 }
+
 .whyinfosecgirls[data-scroll="in"] {
-  opacity:1;
+  opacity: 1;
   transition-delay: 0.25s;
 }
 
@@ -439,22 +452,24 @@ ul.mentorul li {
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
-  transition:0.5s all ease-in;
-  opacity:0;
+  transition: 0.5s all ease-in;
+  opacity: 0;
 }
+
 .ouraim[data-scroll="in"] {
-  opacity:1;
+  opacity: 1;
   transition-delay: 0.25s;
 }
 
 .howyoucanhelp {
   display: flex;
   justify-content: space-around;
-  transition:0.5s all ease-in;
-  opacity:0;
+  transition: 0.5s all ease-in;
+  opacity: 0;
 }
+
 .howyoucanhelp[data-scroll="in"] {
-  opacity:1;
+  opacity: 1;
   transition-delay: 0.25s;
 }
 
@@ -555,16 +570,18 @@ ul.mentorul li {
   margin-left: 100px;
   font-size: 30px;
   font-weight: 900;
+}
 
+.fromourblog {
+  transition: 0.5s all ease-in;
+  opacity: 0;
 }
-.fromourblog{
-  transition:0.5s all ease-in;
-  opacity:0;
-}
+
 .fromourblog[data-scroll="in"] {
-  opacity:1;
+  opacity: 1;
   transition-delay: 0.25s;
 }
+
 .fromourblog strong {
   font-family: 'Poppins', sans-serif;
   margin-left: 100px;
@@ -780,11 +797,6 @@ ul.mentorul li {
   justify-content: center;
 }
 
-.eventlist {
-  width: 65%;
-  border-right: 1px solid rgba(0, 0, 0, 0.18);
-}
-
 .tagdatecont {
   display: flex;
   margin-top: 10px;
@@ -992,7 +1004,8 @@ ul.mentorul li {
   transform-origin: right;
   transform: scaleX(0);
 }
-.contactimg[data-scroll="in"]{
+
+.contactimg[data-scroll="in"] {
   transform: scaleX(1);
   transition-delay: 0.1s;
 }
@@ -1005,21 +1018,16 @@ ul.mentorul li {
   width: 35vw;
 }
 
-ul.mentorul li::before {
+.text2 li::before {
   content: "\2022";
-  color: #f41971;
   font-weight: bold;
   display: inline-block;
   width: 1em;
 }
 
-.text2 li{
-    list-style: none;
-    float: left;
-}
-
-.text2 li::before {
+ul.mentorul li::before {
   content: "\2022";
+  color: #f41971;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -1039,15 +1047,19 @@ ul.mentorul li::before {
 
 .socialico img {
   width: 2.5em;
-  margin-left: 0px;
-  margin-top:17.5px;
-  margin-bottom:17.5px;
-  margin-right:40px;
+  margin-left: 0;
+  margin-top: 17.5px;
+  margin-bottom: 17.5px;
+  margin-right: 40px;
 }
 
 .droparrow {
   height: 0.6em;
   margin-left: 10px;
+}
+
+.txtevent strong {
+  font-size: 20px;
 }
 
 .blog:nth-child(3) strong {
@@ -1077,8 +1089,8 @@ ul.mentorul li::before {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -1092,7 +1104,7 @@ ul.mentorul li::before {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -1105,27 +1117,26 @@ ul.mentorul li::before {
   cursor: pointer;
 }
 
-.txtevent{
+.txtevent {
   font-size: 20px;
   padding-top: 20px;
   margin-bottom: 30px;
 }
 
-.txtevent strong{
-  font-size: 20px;
-}
-
-.qwerty{
+.qwerty {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 25px;
 }
-.datecont{
+
+.datecont {
   font-size: 20px;
 }
-.margincont{
-  margin-bottom:50px;
+
+.margincont {
+  margin-bottom: 50px;
 }
+
 @media screen and (max-width: 1024px) {
   .nav-links {
     display: flex;
@@ -1527,23 +1538,30 @@ ul.mentorul li::before {
   .logo {
     margin-left: 0;
   }
-  .id01{
-    top:10vh;
+
+  .id01 {
+    top: 10vh;
   }
-  .txtevent, .txtevent strong{
+
+  .txtevent,
+  .txtevent strong {
     font-size: 15px;
   }
-  .txtevent{
+
+  .txtevent {
     margin-bottom: 30px;
   }
-  .socialico{
+
+  .socialico {
     justify-content: space-between;
-    width:100%;
+    width: 100%;
   }
-  .socialico img{
-    margin-right:0px;
+
+  .socialico img {
+    margin-right: 0;
   }
-  .margincont{
-    margin-bottom:125px;
+
+  .margincont {
+    margin-bottom: 125px;
   }
 }
