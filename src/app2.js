@@ -8,7 +8,10 @@ async function postData1 (url = '', data = {}) {
   const response = await fetch(url)
   return response.text()
 }
-
+async function postData5 (url = '', index) {
+  const response = await fetch(url)
+  return [response.text(),index]
+}
 postData('blogs.json')
   .then(data => {
     displayCharacters(data.data)
@@ -44,16 +47,15 @@ const displayCharacters = (character) => {
     `
   }
   document.getElementsByClassName('fromourblog')[0].innerHTML = document.getElementsByClassName('fromourblog')[0].innerHTML + htmlString
-  postData1(character[0].content)
-    .then(data => {
-      document.querySelectorAll('.txtevent')[0].innerHTML = marked(data)
-    })
-  postData1(character[1].content)
-    .then(data => {
-      document.querySelectorAll('.txtevent')[1].innerHTML = marked(data)
-    })
-  postData1(character[2].content)
-    .then(data => {
-      document.querySelectorAll('.txtevent')[2].innerHTML = marked(data)
-    })
+  for(var q=0;q<character.length;q++){
+    postData5(character[q].content,q)
+    .then((data) => {
+      data[0].then((qwer)=>{
+        document.querySelectorAll('.txtevent')[data[1]].innerHTML = marked(qwer)
+      })
+      
+  })
+
+  }
+
 }
