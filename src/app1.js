@@ -93,9 +93,15 @@ function load (mydata) {
       })
   }
 }
-
+const check2 = document.forms.filter.checkbox1
+const check3 = document.forms.filter.checkbox2
+const check4 = document.forms.filter.checkbox3
+const checkbar = document.forms.filter
 const searchBar = document.getElementById('searchBar')
 searchBar.addEventListener('keyup', (e) => {
+  check2.checked=true
+  check3.checked=true
+  check4.checked=true
   postData3('data.json')
     .then(data => {
       const searchString = e.target.value.toLowerCase()
@@ -116,10 +122,7 @@ searchBar.addEventListener('keyup', (e) => {
     })
 })
 
-const check2 = document.forms.filter.checkbox1
-const check3 = document.forms.filter.checkbox2
-const check4 = document.forms.filter.checkbox3
-const checkbar = document.forms.filter
+
 checkbar.addEventListener('change', function () {
   if (check2.checked == false && check3.checked == false && check4.checked == false) {
     document.getElementsByClassName('eventlist')[0].innerHTML = 'No Results Found'
