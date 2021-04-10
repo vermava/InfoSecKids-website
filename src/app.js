@@ -81,3 +81,12 @@ const arrowvanish = () => {
   }
 }
 arrowvanish()
+
+/*const a = document.querySelector('.whyinfosecgirls')
+let count = 0
+if (a.getAttribute('data-scroll') == 'in' && count == 0) {
+  count += 1
+}
+if (a.getAttribute('data-scroll') == 'in' && count > 0) {
+  a.setAttribute('data-scroll', 'out')
+}*/
