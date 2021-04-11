@@ -1199,6 +1199,13 @@ ul.mentorul li::before {
   position: fixed;
   top: 4vh;
 }
+.imgsocial{
+  margin-top:-15px;
+}
+.imgsocial img{
+  width:30px;
+  margin: 0px 10px 15px 10px;
+}
 
 @media screen and (max-width: 768px) {
   body {
