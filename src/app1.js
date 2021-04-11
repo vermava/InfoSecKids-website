@@ -1,4 +1,3 @@
-document.write('<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" ></script>')
 async function postData (url = '', data = {}) {
   const loader = document.querySelector('.loader')
   loader.className = 'loader'

@@ -156,7 +156,7 @@ const ScrollOut = (function () {
         const intersectY = visibleY === 1 ? 0 : sign(offsetY - clientOffsety)
         const viewportX = clamp((clientOffsetX - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2), -1, 1)
         const viewportY = clamp((clientOffsety - (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2), -1, 1)
-        let visible = void 0
+        let visible
         if (opts.offset) {
           visible = unwrap(opts.offset, element, ctx, doc) <= clientOffsety ? 1 : 0
         } else if ((unwrap(opts.threshold, element, ctx, doc) || 0) < visibleX * visibleY) {
@@ -174,8 +174,7 @@ const ScrollOut = (function () {
                   ctx.elementWidth !== elementWidth ||
                   ctx.offsetX !== offsetX ||
                   ctx.offsetY !== offsetY ||
-                  ctx.intersectX !== ctx.intersectX ||
-                  ctx.intersectY !== ctx.intersectY ||
+                  false ||
                   ctx.viewportX !== viewportX ||
                   ctx.viewportY !== viewportY
         if (changed) {
@@ -427,7 +426,7 @@ const ScrollOut1 = (function () {
         const intersectY = visibleY === 1 ? 0 : sign(offsetY - clientOffsety)
         const viewportX = clamp((clientOffsetX - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2), -1, 1)
         const viewportY = clamp((clientOffsety - (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2), -1, 1)
-        let visible = void 0
+        let visible
         if (opts.offset) {
           visible = unwrap(opts.offset, element, ctx, doc) <= clientOffsety ? 1 : 0
         } else if ((unwrap(opts.threshold, element, ctx, doc) || 0) < visibleX * visibleY) {
@@ -445,8 +444,6 @@ const ScrollOut1 = (function () {
                     ctx.elementWidth !== elementWidth ||
                     ctx.offsetX !== offsetX ||
                     ctx.offsetY !== offsetY ||
-                    ctx.intersectX !== ctx.intersectX ||
-                    ctx.intersectY !== ctx.intersectY ||
                     ctx.viewportX !== viewportX ||
                     ctx.viewportY !== viewportY
         if (changed) {
@@ -698,7 +695,7 @@ const ScrollOut2 = (function () {
         const intersectY = visibleY === 1 ? 0 : sign(offsetY - clientOffsety)
         const viewportX = clamp((clientOffsetX - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2), -1, 1)
         const viewportY = clamp((clientOffsety - (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2), -1, 1)
-        let visible = void 0
+        let visible
         if (opts.offset) {
           visible = unwrap(opts.offset, element, ctx, doc) <= clientOffsety ? 1 : 0
         } else if ((unwrap(opts.threshold, element, ctx, doc) || 0) < visibleX * visibleY) {
@@ -716,8 +713,6 @@ const ScrollOut2 = (function () {
                     ctx.elementWidth !== elementWidth ||
                     ctx.offsetX !== offsetX ||
                     ctx.offsetY !== offsetY ||
-                    ctx.intersectX !== ctx.intersectX ||
-                    ctx.intersectY !== ctx.intersectY ||
                     ctx.viewportX !== viewportX ||
                     ctx.viewportY !== viewportY
         if (changed) {
@@ -969,7 +964,7 @@ const ScrollOut3 = (function () {
         const intersectY = visibleY === 1 ? 0 : sign(offsetY - clientOffsety)
         const viewportX = clamp((clientOffsetX - (elementWidth / 2 + offsetX - clientWidth / 2)) / (clientWidth / 2), -1, 1)
         const viewportY = clamp((clientOffsety - (elementHeight / 2 + offsetY - clientHeight / 2)) / (clientHeight / 2), -1, 1)
-        let visible = void 0
+        let visible
         if (opts.offset) {
           visible = unwrap(opts.offset, element, ctx, doc) <= clientOffsety ? 1 : 0
         } else if ((unwrap(opts.threshold, element, ctx, doc) || 0) < visibleX * visibleY) {
@@ -987,8 +982,6 @@ const ScrollOut3 = (function () {
                     ctx.elementWidth !== elementWidth ||
                     ctx.offsetX !== offsetX ||
                     ctx.offsetY !== offsetY ||
-                    ctx.intersectX !== ctx.intersectX ||
-                    ctx.intersectY !== ctx.intersectY ||
                     ctx.viewportX !== viewportX ||
                     ctx.viewportY !== viewportY
         if (changed) {
@@ -1081,3 +1074,15 @@ const ScrollOut3 = (function () {
 
   return main
 }())
+ScrollOut({
+  targets: '.whyinfosecgirls'
+})
+ScrollOut1({
+  targets: '.ouraim'
+})
+ScrollOut2({
+  targets: '.howyoucanhelp'
+})
+ScrollOut3({
+  targets: '.fromourblog'
+})

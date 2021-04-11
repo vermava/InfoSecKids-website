@@ -1197,7 +1197,7 @@ ul.mentorul li::before {
 
 .id01 {
   position: fixed;
-  top: 5vh;
+  top: 4vh;
 }
 
 @media screen and (max-width: 768px) {
