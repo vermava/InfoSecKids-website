@@ -13,7 +13,10 @@ const indicatorElem = sliderElem.querySelector('.sliderindicator')
 const nextarrowElem = document.querySelector('.nextarrow img')
 const prevarrowElem = document.querySelector('.previousarrow img')
 
+let abc = 0
+
 const load1 = () => {
+  abc = abc + 1
   const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
   const newPos = currentPos + 1
   if (newPos < 4) {
@@ -25,6 +28,7 @@ const load1 = () => {
 }
 
 const load2 = () => {
+  abc = abc + 1
   const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
   const newPos = currentPos - 1
   if (newPos > -1) {
@@ -37,6 +41,7 @@ const load2 = () => {
 
 Array.prototype.forEach.call(dotElems, (dotElem) => {
   dotElem.addEventListener('click', (e) => {
+    abc = abc + 1
     const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
     const newPos = parseInt(dotElem.getAttribute('data-pos'))
 
@@ -81,3 +86,37 @@ const arrowvanish = () => {
   }
 }
 arrowvanish()
+
+const load3 = () => {
+  if (abc === 0) {
+    const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
+    const newPos = currentPos + 1
+    if (newPos < 4) {
+      indicatorElem.className = 'sliderindicator'
+      indicatorElem.classList.add('sliderindicator--right')
+      sliderElem.setAttribute('data-pos', newPos)
+      arrowvanish()
+      setTimeout(load3, 2000)
+    } else {
+      setTimeout(load4, 2000)
+    }
+  }
+}
+
+const load4 = () => {
+  if (abc === 0) {
+    const currentPos = parseInt(sliderElem.getAttribute('data-pos'))
+    const newPos = currentPos - 1
+    if (newPos > -1) {
+      indicatorElem.className = 'sliderindicator'
+      indicatorElem.classList.add('sliderindicator--left')
+      sliderElem.setAttribute('data-pos', newPos)
+      arrowvanish()
+      setTimeout(load4, 2000)
+    } else {
+      setTimeout(load3, 2000)
+    }
+  }
+}
+
+setTimeout(load3, 2000)
