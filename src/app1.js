@@ -1,3 +1,5 @@
+
+const marked = window.marked
 async function postData (url = '', data = {}) {
   const loader = document.querySelector('.loader')
   loader.className = 'loader'

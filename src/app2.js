@@ -1,3 +1,4 @@
+const marked = window.marked
 async function postData (url = '', data = {}) {
   const response = await fetch(url)
   return response.json()

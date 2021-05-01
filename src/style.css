@@ -982,15 +982,135 @@ ul.mentorul li {
 }
 
 .doi {
-  margin-left: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
   margin-top: 14vh;
+  margin-left: -5vw;
 }
 
 .doi strong {
   font-size: 30px;
   font-weight: 900;
-  color: #f41971;
+  color: #000;
   font-family: 'Poppins', sans-serif;
+}
+
+.bubcon {
+  width: 100vw;
+  margin-left: -5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.bub1 {
+  width: 30vw;
+}
+
+.bub2 {
+  width: 30vw;
+}
+
+.bub3 {
+  width: 30vw;
+}
+
+.speech {
+  border-radius: 50px;
+  margin: 2.5vw 2.5vw 0 2.5vw;
+  width: 25vw;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding: 30px;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  margin-left: 6vw;
+}
+
+.speechimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-width: 5px;
+  overflow: hidden;
+  margin-left: 4.5vw;
+  margin-top: 20px;
+}
+
+.speechimgcon {
+  display: flex;
+  align-items: center;
+}
+
+.speechimgtxt {
+  margin: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17.5px;
+}
+
+.speechimg img {
+  width: 100%;
+}
+
+.boldtext {
+  font-weight: 600;
+}
+
+.speechbub:nth-child(3n+1) .speech {
+  background-color: #f4197126;
+}
+
+.speechbub:nth-child(3n+1) .triangle-down {
+  border-top: 40px solid #f4197126;
+}
+
+.speechbub:nth-child(3n+2) .speech {
+  background-color: #98d80026;
+}
+
+.speechbub:nth-child(3n+2) .triangle-down {
+  border-top: 40px solid #98d80026;
+}
+
+.speechbub1:nth-child(3n+1) .speech {
+  background-color: #98d80026;
+}
+
+.speechbub1:nth-child(3n+1) .triangle-down {
+  border-top: 40px solid #98d80026;
+}
+
+.speechbub1:nth-child(3n+2) .speech {
+  background-color: #00c3f726;
+}
+
+.speechbub1:nth-child(3n+2) .triangle-down {
+  border-top: 40px solid #00c3f726;
+}
+
+.speechbub2:nth-child(3n+1) .speech {
+  background-color: #00c3f726;
+}
+
+.speechbub2:nth-child(3n+1) .triangle-down {
+  border-top: 40px solid #00c3f726;
+}
+
+.speechbub2:nth-child(3n+2) .speech {
+  background-color: #f4197126;
+}
+
+.speechbub2:nth-child(3n+2) .triangle-down {
+  border-top: 40px solid #f4197126;
+}
+
+.appbub {
+  display: none;
 }
 
 .mentortxtcolor {
@@ -1562,7 +1682,10 @@ ul.mentorul li::before {
 
   .doi {
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
   }
 
   .nav-links li:nth-child(1) {
@@ -1628,5 +1751,69 @@ ul.mentorul li::before {
 
   .margincont {
     margin-bottom: 125px;
+  }
+
+  .bub1 {
+    display: none;
+  }
+
+  .bub2 {
+    display: none;
+  }
+
+  .bub3 {
+    display: none;
+  }
+
+  .appbub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .speech {
+    width: 80vw;
+  }
+
+  .bubcon {
+    margin: 0;
+  }
+
+  .triangle-down {
+    margin-left: 15vw;
+  }
+
+  .speechimg {
+    margin-left: 8vw;
+  }
+
+  .speechbub:nth-child(3n+1) .speech {
+    background-color: #f4197126;
+  }
+
+  .speechbub:nth-child(3n+1) .triangle-down {
+    border-top: 40px solid #f4197126;
+  }
+
+  .speechbub:nth-child(3n+2) .speech {
+    background-color: #98d80026;
+  }
+
+  .speechbub:nth-child(3n+2) .triangle-down {
+    border-top: 40px solid #98d80026;
+  }
+
+  .speechbub:nth-child(3n+3) .speech {
+    background-color: #00c3f726;
+  }
+
+  .speechbub:nth-child(3n+3) .triangle-down {
+    border-top: 40px solid #00c3f726;
+  }
+
+  .speechimgcon {
+    margin-bottom: 20px;
   }
 }
