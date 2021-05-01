@@ -8,6 +8,7 @@ postData('100days.json')
   })
 
 const displayCharacters = (character) => {
+  character.sort((a, b) => (a.day < b.day) ? 1 : ((b.day < a.day) ? -1 : 0))
   let i
   let htmlString = ''
   for (i = 0; i < character.length; i++) {
