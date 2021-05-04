@@ -15,62 +15,95 @@
 
 
 ## How to add an event
-- Go to src->data.json <br> 
+<ul>
+<li>Go to src->data.json 
 <p align="center">
 <a href="https://ibb.co/TMM0QrW"><img src="https://i.ibb.co/233Mz5Z/Screenshot-2021-05-04-175504.png" alt="Screenshot-2021-05-04-175504" border="0"></a>
-</p>
-- Add a new object( event ) by providing details like
-	- title
-	- tag
-	- date
-	- description ( shown in the events page )
-	- content ( path of the markdown content of that event ( rendered on clicking the continue reading button ) )
-	- image ( image for the event )
+	</p></li>
+<li>Add a new object( event ) by providing details like
+	<ul>
+		<li>title</li>
+		<li>tag</li>
+		<li>date</li>
+		<li>description ( shown in the events page )</li>
+	<li>content ( path of the markdown content of that event ( rendered on clicking the continue reading button ) )</li>
+		<li>image ( image for the event )</li>
+	</ul>
 <p align="center">
 <a href="https://ibb.co/zQyhNTD"><img src="https://i.ibb.co/pbtvnB5/data.png" alt="data" border="0"></a>
-</p>
-- Go to src->events
+	</p></li>
+	
+<li>Go to src->events
 <p align="center">
 <a href="https://ibb.co/PgFvZnM"><img src="https://i.ibb.co/bXQMgZF/event.png" alt="event" border="0"></a>
-</p>
-- Insert the markdown file for that event in the format that should be rendered
+</p></li>
+<li>Insert the markdown file for that event in the format that should be rendered
 <p align="center">
 <a href="https://ibb.co/mF48sdb"><img src="https://i.ibb.co/Lh15wBY/events.png" alt="events" border="0"></a>
-</p>
+</p></li>
 <br>
+</ul>
 
 ## How to add a blog
- - Go to src->blogs.json
- - Add a new object( blog ) by providing details like
- 	- title
-	- date
-	- description ( shown in home page )
-	- content ( path of the markdown file of that blog ( rendered on clicking the continue reading button ) )
-- Go to src->blogs
-- Insert the markdown file for that event in the format that should be rendered
-
+<ul>
+<li>Go to src->blogs.json <br>
+<p align="center">
+<a href="https://ibb.co/DYyBFc4"><img src="https://i.ibb.co/C6ZjyCB/blogsjson.png" alt="blogsjson" border="0"></a>
+</p></li>
+<li>Add a new object( blog ) by providing details like
+	<ul>
+ 		<li>title</li>
+		<li>date</li>
+		<li>description ( shown in home page )</li>
+		<li>content ( path of the markdown file of that blog ( rendered on clicking the continue reading button ) )</li>
+	</ul>
+<p align="center">
+<a href="https://ibb.co/jL55DxB"><img src="https://i.ibb.co/tbhhDNk/blogsjson1.png" alt="blogsjson1" border="0"></a>
+	</p></li>
+<li>Go to src->blogs
+	<p align="center">
+	<a href="https://ibb.co/qBjnDCC"><img src="https://i.ibb.co/sjRPgCC/blog.png" alt="blog" border="0"></a>
+	</p>
+	</li>
+<li>Insert the markdown file for that event in the format that should be rendered
+	<p align="center">
+	<a href="https://ibb.co/fNNB7ws"><img src="https://i.ibb.co/myy17W3/blogs.png" alt="blogs" border="0"></a>
+	</p>
+	</li>
+</ul>
 
 ## How to add a day in the 100daysofinfoseckids Page
- - Go to src->100days.json
- - Add a new object( day ) by providing details like
- 	- text ( content of the day )
-	- day ( day number )
-	- image ( image of the speaker )
+<ul>
+	<li>Go to src->100days.json
+	<p align="center">
+	<a href="https://ibb.co/f4GVqwS"><img src="https://i.ibb.co/J5FWmJd/100days.png" alt="100days" border="0"></a>
+	</p>
+	</li>
+	<li>Add a new object( day ) by providing details like<
+	<ul>
+		<li>text ( content of the day )</li>
+		<li>day ( day number )</li>
+		<li>image ( image of the speaker )</li>
+	</ul>
+	<p align="center">
+	<a href="https://ibb.co/6grs89S"><img src="https://i.ibb.co/m6bz0ZK/days.png" alt="days" border="0"></a>
+	</p></li>
+</ul>
 
 ## Contributors
 
 <table>
 	<tr align="center">
 		<td>
-		John Doe
+		Pratham Jain
 		<p align="center">
-			<img src = "https://dscvit.com/images/dsc-logo-square.svg" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
+			<img src = "https://i.ibb.co/wYrMKM5/Pratham-Jain.jpg" width="150" height="150" alt="Your Name Here (Insert Your Image Link In Src">
 		</p>
 			<p align="center">
-				<a href = "https://github.com/person1">
+				<a href = "https://github.com/pratham31012002">
 					<img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36" alt="GitHub"/>
 				</a>
-				<a href = "https://www.linkedin.com/in/person1">
+				<a href = "https://www.linkedin.com/in/prathamjain31/">
 					<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36" alt="LinkedIn"/>
 				</a>
 			</p>
