@@ -15,7 +15,10 @@
 
 
 ## How to add an event
-- Go to src->data.json
+- Go to src->data.json <br> 
+<p align="center">
+<a href="https://ibb.co/TMM0QrW"><img src="https://i.ibb.co/233Mz5Z/Screenshot-2021-05-04-175504.png" alt="Screenshot-2021-05-04-175504" border="0"></a>
+</p>
 - Add a new object( event ) by providing details like
 	- title
 	- tag
@@ -23,9 +26,17 @@
 	- description ( shown in the events page )
 	- content ( path of the markdown content of that event ( rendered on clicking the continue reading button ) )
 	- image ( image for the event )
+<p align="center">
+<a href="https://ibb.co/zQyhNTD"><img src="https://i.ibb.co/pbtvnB5/data.png" alt="data" border="0"></a>
+</p>
 - Go to src->events
+<p align="center">
+<a href="https://ibb.co/PgFvZnM"><img src="https://i.ibb.co/bXQMgZF/event.png" alt="event" border="0"></a>
+</p>
 - Insert the markdown file for that event in the format that should be rendered
-
+<p align="center">
+<a href="https://ibb.co/mF48sdb"><img src="https://i.ibb.co/Lh15wBY/events.png" alt="events" border="0"></a>
+</p>
 <br>
 
 ## How to add a blog
