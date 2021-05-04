@@ -1700,9 +1700,9 @@ ul.mentorul li::before {
     order: 3;
   }
 
-  .nav-links li:nth-child(4) {
+  /* .nav-links li:nth-child(4) {
     order: 7;
-  }
+  } */
 
   .nav-links li:nth-child(4) {
     display: none;
