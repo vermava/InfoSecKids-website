@@ -1,6 +1,12 @@
 async function postData (url = '', data = {}) {
+  const loader = document.querySelector('.loader')
+  loader.className = 'loader'
   const response = await fetch(url)
-  return response.json()
+  const out = await response.json()
+  if (out !== undefined) {
+    loader.className += ' hidden'
+    return out
+  }
 }
 postData('100days.json')
   .then(data => {
