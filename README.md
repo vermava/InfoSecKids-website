@@ -13,6 +13,18 @@
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
   [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
 
+## Features
+- Events, blogs and 100daysofinfoseckids page fetching data from json file
+- Markdown rendering
+- Filtering events by tag in events page
+- Searching events by title, date and description
+
+## How to Install
+- Clone the repository on your local system
+```bash
+$ git clone https://github.com/GDGVIT/InfoSecKids-website.git
+```
+- Open src->index.html
 
 ## How to add an event
 <ul>
