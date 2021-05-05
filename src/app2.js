@@ -16,6 +16,9 @@ postData('blogs.json')
 const displayCharacters = (character) => {
   let i
   let htmlString = ''
+  if (character.length === 0) {
+    document.getElementsByClassName('fromourblog')[0].innerHTML = ''
+  }
   for (i = 0; i < character.length; i++) {
     htmlString = htmlString + `
         <div class="blog">

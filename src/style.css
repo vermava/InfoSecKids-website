@@ -671,6 +671,7 @@ ul.mentorul li {
 .imgdesc {
   font-size: 20px;
   margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 .imgdesc1 {
@@ -1263,6 +1264,10 @@ ul.mentorul li::before {
   margin-bottom: 50px;
 }
 
+.leaderchap {
+  margin-top: 14vh;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .nav-links {
     display: flex;
@@ -1815,5 +1820,9 @@ ul.mentorul li::before {
 
   .speechimgcon {
     margin-bottom: 20px;
+  }
+
+  .leaderchap {
+    margin-top: 0;
   }
 }
