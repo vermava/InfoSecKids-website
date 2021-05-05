@@ -59,6 +59,10 @@ nav {
   z-index: -1;
 }
 
+.main {
+  min-height: 100vh;
+}
+
 .main1 {
   z-index: -1;
   padding-left: 5vw;
