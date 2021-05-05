@@ -1826,5 +1826,17 @@ ul.mentorul li::before {
 
   .leaderchap {
     margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .leadmain {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
