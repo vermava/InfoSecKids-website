@@ -745,7 +745,7 @@ ul.mentorul li {
   border: none;
   width: 60%;
   height: 7vh;
-  font-size: 25px;
+  font-size: 22.5px;
   margin: 20px;
 }
 
@@ -1530,11 +1530,13 @@ ul.mentorul li::before {
   }
 
   .searchbuttoncont {
-    width: 60%;
+    width: auto;
   }
 
   .searchbutton {
     width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .filters {
