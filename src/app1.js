@@ -24,6 +24,9 @@ postData('data.json')
   })
 function load (mydata) {
   let i
+  if (mydata.length === 0) {
+    document.getElementsByClassName('eventlist')[0].innerHTML = 'No Content Found<br><br><br><br><br>'
+  }
   for (i = 0; i < mydata.length; i++) {
     const a = document.createElement('div')
     a.setAttribute('class', 'eventdetails')
@@ -111,7 +114,7 @@ searchBar.addEventListener('keyup', (e) => {
         )
       })
       if (filteredCharacters.length === 0) {
-        document.getElementsByClassName('eventlist')[0].innerHTML = 'No Results Found<br><br><br><br><br>'
+        document.getElementsByClassName('eventlist')[0].innerHTML = 'No Content Found<br><br><br><br><br>'
       } else {
         document.getElementsByClassName('eventlist')[0].innerHTML = ''
         load(filteredCharacters)
