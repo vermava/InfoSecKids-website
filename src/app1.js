@@ -18,7 +18,7 @@ async function postData5 (url = '', index) {
   const response = await fetch(url)
   return [response.text(), index]
 }
-postData('data.json')
+postData('events.json')
   .then(data => {
     load(data.data)
   })
@@ -102,7 +102,7 @@ searchBar.addEventListener('keyup', (e) => {
   check2.checked = true
   check3.checked = true
   check4.checked = true
-  postData3('data.json')
+  postData3('events.json')
     .then(data => {
       const searchString = e.target.value.toLowerCase()
 
@@ -129,7 +129,7 @@ checkbar.addEventListener('change', function () {
     let car = []
     if (check2.checked) {
     // console.log('Checkbox1 is checked..')
-      postData('data.json')
+      postData('events.json')
         .then(data => {
           const filteredCharacters1 = data.data.filter((character) => {
             return (
@@ -144,7 +144,7 @@ checkbar.addEventListener('change', function () {
     }
     if (check3.checked) {
     // console.log('Checkbox2 is checked..')
-      postData('data.json')
+      postData('events.json')
         .then(data => {
           const filteredCharacters1 = data.data.filter((character) => {
             return (
@@ -159,7 +159,7 @@ checkbar.addEventListener('change', function () {
     }
     if (check4.checked) {
     // console.log('Checkbox3 is checked..')
-      postData('data.json')
+      postData('events.json')
         .then(data => {
           const filteredCharacters1 = data.data.filter((character) => {
             return (
