@@ -14,18 +14,14 @@ postData('100days.json')
   })
 
 const displayCharacters = (character) => {
-  character.sort((a, b) => (a.day < b.day) ? 1 : ((b.day < a.day) ? -1 : 0))
   let i
   let htmlString = ''
   for (i = 0; i < character.length; i++) {
     htmlString = htmlString +
       `
         <div class="speechbub">
-                        <div class="speech">${character[i].text}</div>
-                        <div class="triangle-down"></div>
                         <div class="speechimgcon">
                             <div class="speechimg"><img src="${character[i].image}" alt="member name"></div>
-                            <div class="speechimgtxt"><span class="boldtext">${character[i].name}</span><br>Day ${character[i].day}</div>
                         </div>
         </div>
       `
@@ -37,12 +33,9 @@ const displayCharacters = (character) => {
   for (j = 0; j < character.length; j = j + 3) {
     bub1con = bub1con +
       `
-        <div class="speechbub">
-                        <div class="speech">${character[j].text}</div>
-                        <div class="triangle-down"></div>
+        <div class="speechbub" style="margin-bottom:30px;">
                         <div class="speechimgcon">
-                            <div class="speechimg"><img src="${character[j].image}" alt="member name"></div>
-                            <div class="speechimgtxt"><span class="boldtext">${character[j].name}</span><br>Day ${character[j].day}</div>
+                            <div class="speechimg"><img src="${character[j].image}" alt="member name" style="border:5px solid #00c3f7;"></div>
                         </div>
         </div>
       `
@@ -52,12 +45,9 @@ const displayCharacters = (character) => {
   for (j = 1; j < character.length; j = j + 3) {
     bub1con = bub1con +
       `
-        <div class="speechbub1">
-                        <div class="speech">${character[j].text}</div>
-                        <div class="triangle-down"></div>
+        <div class="speechbub1" style="margin-bottom:30px;">
                         <div class="speechimgcon">
-                            <div class="speechimg"><img src="${character[j].image}" alt="member name"></div>
-                            <div class="speechimgtxt"><span class="boldtext">${character[j].name}</span><br>Day ${character[j].day}</div>
+                            <div class="speechimg"><img src="${character[j].image}" alt="member name" style="border:5px solid #f41971;"></div>
                         </div>
         </div>
       `
@@ -68,12 +58,10 @@ const displayCharacters = (character) => {
   for (j = 2; j < character.length; j = j + 3) {
     bub1con = bub1con +
       `
-        <div class="speechbub2">
-                        <div class="speech">${character[j].text}</div>
-                        <div class="triangle-down"></div>
+        <div class="speechbub2" style="margin-bottom:30px;">
+                        
                         <div class="speechimgcon">
-                            <div class="speechimg"><img src="${character[j].image}" alt="member name"></div>
-                            <div class="speechimgtxt"><span class="boldtext">${character[j].name}</span><br>Day ${character[j].day}</div>
+                            <div class="speechimg"><img src="${character[j].image}" alt="member name" style="border:5px solid #98d800;"></div>
                         </div>
         </div>
       `
