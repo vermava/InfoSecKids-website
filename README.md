@@ -28,7 +28,8 @@ $ git clone https://github.com/GDGVIT/InfoSecKids-website.git
 
 ## How to add an event
 <ul>
-<li>Go to src->data.json 
+<li><a href="https://drive.google.com/file/d/1juGZ0djoMvFalFnHzrgljJQrJoxo8lSt/view?usp=sharing">See video</a></li>
+<li>Go to src->events.json 
 <p align="center">
 <a href="https://ibb.co/TMM0QrW"><img src="https://i.ibb.co/233Mz5Z/Screenshot-2021-05-04-175504.png" alt="Screenshot-2021-05-04-175504" border="0"></a>
 	</p></li>
@@ -58,6 +59,7 @@ $ git clone https://github.com/GDGVIT/InfoSecKids-website.git
 
 ## How to add a blog
 <ul>
+<li><a href="https://drive.google.com/file/d/1tS_D4Lto3Af1o3_SPQ58ES8xibJv5WR2/view?usp=sharing">See video</a></li>
 <li>Go to src->blogs.json <br>
 <p align="center">
 <a href="https://ibb.co/DYyBFc4"><img src="https://i.ibb.co/C6ZjyCB/blogsjson.png" alt="blogsjson" border="0"></a>
@@ -86,6 +88,7 @@ $ git clone https://github.com/GDGVIT/InfoSecKids-website.git
 
 ## How to add a day in the 100daysofinfoseckids Page
 <ul>
+	<li><a href="https://drive.google.com/file/d/1ubtrigVUJGGw5re-Q9dOMWnQaeitgPuo/view?usp=sharing">See video</a></li>
 	<li>Go to src->100days.json
 	<p align="center">
 	<a href="https://ibb.co/f4GVqwS"><img src="https://i.ibb.co/J5FWmJd/100days.png" alt="100days" border="0"></a>
@@ -93,9 +96,7 @@ $ git clone https://github.com/GDGVIT/InfoSecKids-website.git
 	</li>
 	<li>Add a new object( day ) by providing details like<
 	<ul>
-		<li>text ( content of the day )</li>
-		<li>day ( day number )</li>
-		<li>image ( image of the speaker )</li>
+		<li>image ( image of the day )</li>
 	</ul>
 	<p align="center">
 	<a href="https://ibb.co/6grs89S"><img src="https://i.ibb.co/m6bz0ZK/days.png" alt="days" border="0"></a>

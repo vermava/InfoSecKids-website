@@ -120,3 +120,12 @@ const load4 = () => {
 }
 
 setTimeout(load3, 2000)
+
+async function postfooter (url = '', data = {}) {
+  const response = await fetch(url)
+  return response.json()
+}
+postfooter('footer.json')
+  .then(data => {
+    document.querySelectorAll('.creator')[0].innerHTML=data.data;
+  })
