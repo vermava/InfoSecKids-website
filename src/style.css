@@ -59,6 +59,10 @@ nav {
   z-index: -1;
 }
 
+.main {
+  min-height: 100vh;
+}
+
 .main1 {
   z-index: -1;
   padding-left: 5vw;
@@ -998,9 +1002,10 @@ ul.mentorul li {
 }
 
 .bubcon {
-  width: 100vw;
-  margin-left: -5vw;
+  width: 105vw;
+  margin-left: -10vw;
   display: flex;
+  padding-left: -5vw;
   justify-content: center;
 }
 
@@ -1034,9 +1039,7 @@ ul.mentorul li {
 }
 
 .speechimg {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 100%;
   border-width: 5px;
   overflow: hidden;
   margin-left: 4.5vw;
@@ -1334,6 +1337,18 @@ ul.mentorul li::before {
   margin: 0 10px 15px 10px;
 }
 
+.creator{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c3f7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  margin-top: -50px;
+}
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -1786,6 +1801,11 @@ ul.mentorul li::before {
 
   .bubcon {
     margin: 0;
+    width:100vw;
+    padding:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .triangle-down {
@@ -1793,7 +1813,18 @@ ul.mentorul li::before {
   }
 
   .speechimg {
-    margin-left: 8vw;
+    margin-left: 0vw;
+    width:80vw;
+  }
+  
+  .speechbub:nth-child(3n+1) .speechimg{
+    border: 5px solid #00c3f7;
+  }
+  .speechbub:nth-child(3n+2) .speechimg{
+    border: 5px solid #f41971;
+  }
+  .speechbub:nth-child(3n+3) .speechimg{
+    border: 5px solid #98d800;
   }
 
   .speechbub:nth-child(3n+1) .speech {
